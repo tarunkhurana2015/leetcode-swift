@@ -1,0 +1,98 @@
+import UIKit
+
+// Node Testing //
+let node1 = Node(value: 1)
+let node2 = Node(value: 2)
+let node3 = Node(value: 3)
+
+node1.next = node2
+node2.next = node3
+print(node1)
+
+// LinkedList Testing //
+var linkedList = LinkedList<Int>()
+print(linkedList)
+linkedList.push(9)
+linkedList.push(1)
+linkedList.push(5)
+linkedList.push(4)
+print(linkedList)
+
+// Linkedlist addNode()
+var linkedList1 = LinkedList<Int>()
+print(linkedList1)
+let node11 = Node(value: 9)
+let node12 = Node(value: 1)
+let node13 = Node(value: 5)
+let node14 = Node(value: 4)
+linkedList1.addNode(node11)
+linkedList1.addNode(node12)
+linkedList1.addNode(node13)
+linkedList1.addNode(node14)
+print(linkedList1)
+// deleteNode
+linkedList1.deleteNode(node13)
+print(linkedList1)
+
+var linkedList2 = LinkedList<Int>()
+print(linkedList2)
+let node111 = Node(value: 5)
+let node121 = Node(value: 4)
+let node131 = Node(value: 3)
+let node141 = Node(value: 2)
+let node151 = Node(value: 1)
+linkedList2.addNode(node111)
+linkedList2.addNode(node121)
+linkedList2.addNode(node131)
+linkedList2.addNode(node141)
+linkedList2.addNode(node151)
+print(linkedList2)
+linkedList2.removeNthFromEnd(5)
+
+var linkedList3 = LinkedList<Int>()
+linkedList3.addNode(Node(value: 5))
+linkedList3.addNode(Node(value: 4))
+linkedList3.addNode(Node(value: 3))
+linkedList3.addNode(Node(value: 2))
+linkedList3.addNode(Node(value: 1))
+print(linkedList3)
+print(linkedList3.reverseRecursive(linkedList3.head))
+
+
+var linkedList4 = LinkedList<Int>()
+linkedList4.addNode(Node(value: 4))
+linkedList4.addNode(Node(value: 2))
+linkedList4.addNode(Node(value: 1))
+var linkedList5 = LinkedList<Int>()
+linkedList5.addNode(Node(value: 4))
+linkedList5.addNode(Node(value: 3))
+linkedList5.addNode(Node(value: 1))
+var linkedList6 = LinkedList<Int>()
+print(linkedList6.sortMerge(linkedList4.head, linkedList5.head))
+
+var linkedList7 = LinkedList<Int>()
+linkedList7.addNode(Node(value: 1))
+linkedList7.addNode(Node(value: 2))
+linkedList7.addNode(Node(value: 3))
+linkedList7.addNode(Node(value: 3))
+linkedList7.addNode(Node(value: 2))
+linkedList7.addNode(Node(value: 1))
+print(linkedList7.palindrome())
+
+// Linkedlist addNode()
+var linkedList8 = LinkedList<Int>()
+print(linkedList8)
+let node1100 = Node(value: 4)
+let node1200 = Node(value: 0)
+let node1300 = Node(value: 2)
+let node1400 = Node(value: 3)
+linkedList8.addNode(node1100)
+linkedList8.addNode(node1200)
+linkedList8.addNode(node1300)
+linkedList8.addNode(node1400)
+
+print(linkedList8)
+
+linkedList8.addNodeEnd(node1300)
+//print(linkedList8)
+print(linkedList8.hasLoop())
