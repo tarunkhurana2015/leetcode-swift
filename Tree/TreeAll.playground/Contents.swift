@@ -22,3 +22,14 @@ print(binaryTree1.maxDepth())
 print(binaryTree1.minValue())
 
 print(binaryTree1.isBST())
+
+
+let binaryTree2 = BinaryTree<Int>()
+binaryTree2.insert(3)
+binaryTree2.insert(5)
+binaryTree2.insert(2)
+binaryTree2.insert(1)
+binaryTree2.insert(4)
+binaryTree2.insert(6)
+binaryTree2.insert(7)
+binaryTree2.getHeight(root: binaryTree2.root)

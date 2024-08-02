@@ -48,6 +48,21 @@ extension BinaryTree {
 }
 
 extension BinaryTree {
+    public func getHeight(root: TreeNode<Type>?) -> Int {
+            
+        guard let node = root else {
+            return -1
+        }
+        
+        let leftHeight = getHeight(root: node.left)
+        let rightHeight = getHeight(root: node.right)
+        
+        return max(leftHeight, rightHeight) + 1
+        
+    } // End of getHeight function
+}
+
+extension BinaryTree {
     public func inOrderTraversal(_ node: TreeNode<Type>?) {
         guard let node = node else {
             return
