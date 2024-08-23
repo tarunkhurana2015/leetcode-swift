@@ -28,3 +28,29 @@ func compression(_ str: String) -> String {
 }
 
 compression("aaabbbcccdaa")
+
+func compress(_ chars: [Character]) -> Int {
+    
+    var compressedString = ""
+    var currentChar: Character?
+    var charCount = 0
+    
+    for character in chars {
+        if character == currentChar {
+            charCount += 1
+        } else {
+            if let current = currentChar {
+                compressedString += String(current)+String(charCount)
+            }
+            currentChar = character
+            charCount = 1
+        }
+    }
+    if let current = currentChar {
+        compressedString += String(current)+String(charCount)
+    }
+    
+    return compressedString.count
+}
+
+compress(["a","a","b","b","c","c","c"])

@@ -30,3 +30,5 @@ let input = "PAYPALISHIRING"
 let numRows = 3
 let result = convert(input, numRows)
 print(result) // Output: "PAHNAPLSIIGYIR"
+
+""

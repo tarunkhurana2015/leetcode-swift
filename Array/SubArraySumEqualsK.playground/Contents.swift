@@ -24,6 +24,7 @@ let count = subArrySumEqualsK(array, 10)
 
 
 
+
 func subArrySumEqualsK1(_ array: [Int], _ k: Int) -> Int {
     
     var count: Int = 0
@@ -43,7 +44,8 @@ func subArrySumEqualsK1(_ array: [Int], _ k: Int) -> Int {
     return count
 }
 
-let count1 = subArrySumEqualsK1(array, 10)
+//let count1 = subArrySumEqualsK1(array, 10)
+subArrySumEqualsK1([1,2,3,4], 5)
 
 /*
  
